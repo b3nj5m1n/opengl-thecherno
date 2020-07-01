@@ -1,3 +1,3 @@
 
 all: main.cpp
-	g++ -o bin/out -lglfw -lGL -lGLU -lglut main.cpp
+	g++ -o bin/out -lglfw -lGL -lGLEW main.cpp
