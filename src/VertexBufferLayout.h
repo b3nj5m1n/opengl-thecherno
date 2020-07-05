@@ -33,7 +33,7 @@ class VertexBufferLayout
         template<typename T>
             void Push(unsigned int count)
             {
-                static_assert(false);
+                /* static_assert(false); */
             }
 
         inline const std::vector<VertexBufferElement> &GetElements() const { return m_Elements; }
