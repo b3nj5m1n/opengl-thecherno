@@ -8,7 +8,8 @@ Written in (neo)vim, on a linux machine, compiled using g++, meaning some of the
 
 ## [Writing a Shader in OpenGL](https://www.youtube.com/watch?v=71BLZwRGUJE&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=8&t=0s)
 On my laptop the default version of OpenGL in mesa wasn't correct, so I was getting errors when trying to compile shaders using the 330 core profile.
-Here is the solution:
+To fix this, export this enviormental variable in the shell you're running the binary in:
+
 `export MESA_GL_VERSION_OVERRIDE=3.3`
 
 ## [Buffer Layout Abstraction in OpenGL](https://www.youtube.com/watch?v=oD1dvfbyf6A&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=15&t=0s)
