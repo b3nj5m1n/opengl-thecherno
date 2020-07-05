@@ -7,4 +7,6 @@ all: src/main.cpp src/Renderer.cpp
 	g++ -c src/IndexBuffer.cpp -o obj/IndexBuffer.o
 	g++ -c src/VertexArray.cpp -o obj/VertexArray.o
 	g++ -c src/Shader.cpp -o obj/Shader.o
+	g++ -c src/vendor/stb_image/stb_image.cpp -o obj/stb_image.o
+	g++ -c src/Texture.cpp -o obj/Texture.o
 	g++ -o bin/out -lglfw -lGL -lGLEW obj/*

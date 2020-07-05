@@ -17,3 +17,7 @@ The fix is pretty simple, just move the template functions outside of the class.
 
 ## [Writing a Basic Renderer in OpenGL](https://www.youtube.com/watch?v=jjaTTRFXRAk&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=17&t=0s)
 I was getting a bunch of inclusion errors and fixed it in a different way, by putting stuff like the GLCall macro in a seperate file (GLErrorManager).
+
+## [Textures in OpenGL](https://www.youtube.com/watch?v=n4k7ANAFsIQ&list=PLlrATfBNZ98foTJPJ_Ev03o2oq3-GGOS2&index=18&t=0s)
+I was getting some errors when trying to compile stb_image, apparently there are some problems when using it in g++, I fixed it by using an outdated version.
+The 'logo' I'm using is from [pixabay](https://pixabay.com/vectors/fire-flame-black-circle-logo-303309/).
