@@ -1,12 +1,24 @@
+# Compiler
+CC = g++
+
+# Compile flags
+CLFAGS = -c
+
+# Source Directory
+SDIR = src
+# Object Directory
+ODIR = obj
+# Binary Directory
+BDIR = bin
 
 all: src/main.cpp src/Renderer.cpp
-	g++ -c src/main.cpp -o obj/main.o
-	g++ -c src/GLErrorManager.cpp -o obj/GLErrorManager.o
-	g++ -c src/Renderer.cpp -o obj/Renderer.o
-	g++ -c src/VertexBuffer.cpp -o obj/VertexBuffer.o
-	g++ -c src/IndexBuffer.cpp -o obj/IndexBuffer.o
-	g++ -c src/VertexArray.cpp -o obj/VertexArray.o
-	g++ -c src/Shader.cpp -o obj/Shader.o
-	g++ -c src/vendor/stb_image/stb_image.cpp -o obj/stb_image.o
-	g++ -c src/Texture.cpp -o obj/Texture.o
-	g++ -o bin/out -lglfw -lGL -lGLEW obj/*
+	$(CC) $(CLFAGS) $(SDIR)/main.cpp -o $(ODIR)/main.o
+	$(CC) $(CLFAGS) $(SDIR)/GLErrorManager.cpp -o $(ODIR)/GLErrorManager.o
+	$(CC) $(CLFAGS) $(SDIR)/Renderer.cpp -o $(ODIR)/Renderer.o
+	$(CC) $(CLFAGS) $(SDIR)/VertexBuffer.cpp -o $(ODIR)/VertexBuffer.o
+	$(CC) $(CLFAGS) $(SDIR)/IndexBuffer.cpp -o $(ODIR)/IndexBuffer.o
+	$(CC) $(CLFAGS) $(SDIR)/VertexArray.cpp -o $(ODIR)/VertexArray.o
+	$(CC) $(CLFAGS) $(SDIR)/Shader.cpp -o $(ODIR)/Shader.o
+	$(CC) $(CLFAGS) $(SDIR)/vendor/stb_image/stb_image.cpp -o $(ODIR)/stb_image.o
+	$(CC) $(CLFAGS) $(SDIR)/Texture.cpp -o $(ODIR)/Texture.o
+	$(CC) -o $(BDIR)/out -lglfw -lGL -lGLEW $(ODIR)/*
