@@ -26,4 +26,5 @@ all: src/main.cpp src/Renderer.cpp
 	$(CC) $(CLFAGS) $(SDIR)/vendor/imgui/imgui_draw.cpp -o $(ODIR)/imgui_draw.o
 	$(CC) $(CLFAGS) $(SDIR)/vendor/imgui/imgui_demo.cpp -o $(ODIR)/imgui_demo.o
 	$(CC) $(CLFAGS) $(SDIR)/tests/TestClearColor.cpp -o $(ODIR)/TestClearColor.o
+	$(CC) $(CLFAGS) $(SDIR)/tests/Test.cpp -o $(ODIR)/Test.o
 	$(CC) -o $(BDIR)/out -lglfw -lGL -lGLEW $(ODIR)/*
